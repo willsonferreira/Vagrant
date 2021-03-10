@@ -1,0 +1,9 @@
+CREATE USER IF NOT EXISTS 'willson'@'%' IDENTIFIED BY 'willson';
+
+CREATE DATABASE IF NOT EXISTS University;
+
+ALTER DATABASE University
+  DEFAULT CHARACTER SET utf8
+  DEFAULT COLLATE utf8_general_ci;
+
+GRANT ALL PRIVILEGES ON University.* TO 'willson'@'%' IDENTIFIED BY 'willson';
